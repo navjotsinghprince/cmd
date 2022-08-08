@@ -48,9 +48,9 @@ php artisan make:model Lorem
 
 ### ```ARTISAN MIGRATION```
 ```bash
-php artisan migrate:refresh --path=/database/migrations/filename.php #run specific migration
-php artisan make:migration create_my_name_table  #Create single migration
-php artisan make:migration add_parent_id_column_to_events_table  #Add new column migration
+php artisan migrate:refresh --path=/database/migrations/filename.php
+php artisan make:migration create_my_name_table 
+php artisan make:migration add_parent_id_column_to_events_table  
 php artisan migrate
 php artisan migrate fresh
 php artisan migrate refresh
