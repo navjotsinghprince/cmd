@@ -23,7 +23,15 @@ php artisan route:cache   #The POST method is not supported for this route Fix E
 php artisan view:clear 
 php artisan optimize:clear 
 composer dump-autoload    #For no such file or directory then use
+composer du     #shorthand
 composer update 
+```
+
+### ```CREATE MODEL CONTROLLER MIGRATIONS```
+```bash
+php artisan make:model Prince -mc
+php artisan make:model -mc Prince
+php artisan make:model Prince -m #Create migration file with model 
 ```
 
    
