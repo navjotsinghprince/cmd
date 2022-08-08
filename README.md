@@ -31,7 +31,7 @@ composer update
 ```bash
 php artisan make:model Lorem -mc
 php artisan make:model -mc Lorem
-php artisan make:model Lorem -m #Create migration and model 
+php artisan make:model Lorem -m  #Create migration and model 
 ```
 
 ### ```ARTISAN ROUTES```
@@ -68,8 +68,8 @@ php artisan migrate:fresh --seed
 
 ### ```ARTISAN CONTROLLERS```
 ```bash
-php artisan make:controller LoremController   #Global Controller
-php artisan make:controller Api/User/LoremController #Inside Folder 
+php artisan make:controller LoremController
+php artisan make:controller Api/User/LoremController
 php artisan make:controller Api/Admin/LoremController
 php artisan make:controller LoremController --invokable
 php artisan make:model Lorem -m -r  #Resource Controller
