@@ -16,15 +16,20 @@ hostnamectl
 
 ### ```ARTISAN OPTIMIZATION```  
 ```bash
-php artisan config:clear  #resolve query error if we submit data on database
+php artisan config:clear
 php artisan cache:clear 
 php artisan route:clear  
-php artisan route:cache   #The POST method is not supported for this route Fix Error
+php artisan route:cache   
 php artisan view:clear 
-php artisan optimize:clear 
-composer dump-autoload    #For no such file or directory then use
-composer du     #shorthand
+php artisan optimize:clear
+composer dump-autoload
+composer du
 composer update 
+```
+
+### ```ARTISAN KEY ```
+```bash
+php artisan key:generate
 ```
 
 ### ```ARTISAN MODEL CONTROLLER MIGRATIONS```
@@ -52,9 +57,9 @@ php artisan migrate:refresh --path=/database/migrations/filename.php
 php artisan make:migration create_my_name_table 
 php artisan make:migration add_parent_id_column_to_events_table  
 php artisan migrate
-php artisan migrate fresh
-php artisan migrate refresh
-php artisan migrate refresh --force
+php artisan migrate:fresh
+php artisan migrate:refresh
+php artisan migrate:refresh --force
 ```
 
 
