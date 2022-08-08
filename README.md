@@ -14,7 +14,7 @@ git --version
 hostnamectl
 ```
 
-### OPTIMIZATION ``` ARTISAN ```
+### ``` ARTISAN ``` OPTIMIZATION 
 ```bash
 php artisan config:clear  #resolve query error if we submit data on database
 php artisan cache:clear 
