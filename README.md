@@ -2,39 +2,15 @@
 
 
 ### OPTIMIZATION ``` ARTISAN ```
-
 ```bash
-php artisan optimize:clear
-```
-```bash
-php artisan db:seed
-```
-```bash
-php artisan optimize
-```
-
-
-```php
-```bash
-composer du
-```
-```bash
-composer du
-```
-```bash
-composer du
-```
+php artisan config:clear  <!--resolve query error if we submit data on database -->
+php artisan cache:clear 
+php artisan route:clear  
+php artisan route:cache ==== The POST method is not supported for this route Fix Error
+php artisan view:clear 
+php artisan optimize:clear 
+composer dump-autoload ==== For no such file or directory then use
+composer update 
 ```
 
-```bash
-    php artisan optimize:clear
-    php artisan db:seed 
-    php artisan optimize
-    composer du
-```
-
-    php artisan optimize:clear
-    php artisan db:seed 
-    php artisan optimize
-    composer du
-
+   
