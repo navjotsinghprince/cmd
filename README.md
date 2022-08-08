@@ -12,8 +12,18 @@ php artisan db:seed
 ```bash
 php artisan optimize
 ```
+
+
+```php
 ```bash
 composer du
+```
+```bash
+composer du
+```
+```bash
+composer du
+```
 ```
 
 ```bash
