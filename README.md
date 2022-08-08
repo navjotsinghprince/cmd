@@ -16,8 +16,8 @@ php artisan optimize
 composer du
 ```
 
-```bash
-php artisan optimize:clear ```buttonless
+```bash```
+php artisan optimize:clear
 php artisan db:seed 
 php artisan optimize
 composer du
