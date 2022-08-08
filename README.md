@@ -48,18 +48,20 @@ php artisan route:cache #The POST method is not supported for this route fix err
 
 ### ```ARTISAN MODEL```
 ```bash
-php artisan make:model Lorem 
+php artisan make:model User
+php artisan model:show User
 ```
 
 ### ```ARTISAN MIGRATION```
 ```bash
 php artisan migrate:refresh --path=/database/migrations/filename.php
 php artisan make:migration create_my_name_table 
-php artisan make:migration add_parent_id_column_to_events_table  
+php artisan make:migration add_user_id_column_to_profile_table  
 php artisan migrate
 php artisan migrate:fresh
 php artisan migrate:refresh
 php artisan migrate:refresh --force
+php artisan migrate:status
 ```
 
 
