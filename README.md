@@ -107,6 +107,18 @@ php artisan horizon
 
 ```
 
+### ```ARTISAN STORAGE```
+```bash
+php artisan storage:link
+sudo chmod -R gu+w storage 
+sudo chmod -R guo+w storage
+php artisan cache:clear
+
+sudo chmod -R 777 PictureUploads 
+sudo chmod -R 777 storage/ 
+
+```
+
 ### ```ARTISAN MODULE```
 ```bash
 php artisan module:seed --class=LoremTableSeeder ModuleName
@@ -154,3 +166,4 @@ ls -lha | grep env
 cp .env.example .env
 nano .env
 ```
+
