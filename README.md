@@ -27,26 +27,26 @@ composer du     #shorthand
 composer update 
 ```
 
-### ```CREATE MODEL CONTROLLER MIGRATIONS```
+### ```ARTISAN MODEL CONTROLLER MIGRATIONS```
 ```bash
 php artisan make:model Lorem -mc
 php artisan make:model -mc Lorem
 php artisan make:model Lorem -m #Create migration and model 
 ```
 
-### ```ROUTES```
+### ```ARTISAN ROUTES```
 ```bash
 php artisan route:list 
 php artisan route:clear 
 php artisan route:cache #The POST method is not supported for this route fix error
 ```
 
-### ```MODEL```
+### ```ARTISAN MODEL```
 ```bash
 php artisan make:model Lorem 
 ```
 
-### ```MIGRATION```
+### ```ARTISAN MIGRATION```
 ```bash
 php artisan migrate:refresh --path=/database/migrations/filename.php #run specific migration
 php artisan make:migration create_my_name_table  #Create single migration
@@ -58,7 +58,7 @@ php artisan migrate refresh --force
 ```
 
 
-### ```SEEDERS```
+### ```ARTISAN SEEDERS```
 ```bash
 php artisan make:seeder UserSeeder
 php artisan db:seed
@@ -66,7 +66,7 @@ php artisan db:seed --class=UserSeeder #run specific seeder
 php artisan migrate:fresh --seed   
 ```
 
-### ```CONTROLLERS```
+### ```ARTISAN CONTROLLERS```
 ```bash
 php artisan make:controller LoremController   #Global Controller
 php artisan make:controller Api/User/LoremController #Inside Folder 
@@ -76,32 +76,23 @@ php artisan make:model Lorem -m -r  #Resource Controller
   
 ```
 
-### ```CONTROLLERS```
-```bash
-php artisan make:controller LoremController   #Global Controller
-php artisan make:controller Api/User/LoremController #Inside Folder 
-php artisan make:controller Api/Admin/LoremController
-php artisan make:controller LoremController --invokable
-php artisan make:model Lorem -m -r  #Resource Controller
-  
-```
 
-### ```MIDDLEWARE```
+### ```ARTISAN MIDDLEWARE```
 ```bash
 php artisan make:middleware Lorem
 ```
 
-### ```COMMANDS```
+### ```ARTISAN COMMANDS```
 ```bash
 php artisan make:command LoremCommand
 ```
 
-### ```REQUEST```
+### ```ARTISAN REQUEST```
 ```bash
 php artisan make:request LoremRequest #request for validation
 ```
 
-### ```JOBS```
+### ```ARTISAN JOBS```
 ```bash
 php artisan make:job ProcessPodcast
 composer require laravel/horizon
@@ -115,6 +106,15 @@ redis-cli flushall
 php artisan horizon
 
 ```
+
+### ```ARTISAN MODULE```
+```bash
+php artisan module:seed --class=LoremTableSeeder ModuleName
+php artisan module:make-model LoremModel ModuleName  
+php artisan module:migrate ModuleName
+
+```
+
 
 ### ```NPM```
 ```bash
@@ -146,7 +146,6 @@ git push
 #git reset HEAD~ ==== for undo a commit
 #git reset --soft HEAD~1 ==Undo Last Commit
 
-
 ```
 
 ### ```ENV```
@@ -156,14 +155,3 @@ git push
  cp .env.example .env
  nano .env
 ```
-
-
-### ```MODULE```
-```bash
-php artisan module:seed --class=LoremTableSeeder ModuleName
-php artisan module:make-model LoremModel ModuleName  
-php artisan module:migrate ModuleName
-
-```
-
-
