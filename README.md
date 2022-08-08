@@ -20,7 +20,7 @@ composer du
     php artisan optimize:clear
     php artisan db:seed 
     php artisan optimize
-composer du
+    composer du
 ```
 
 
