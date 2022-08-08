@@ -3,7 +3,7 @@
 
 ### OPTIMIZATION ``` ARTISAN ```
 ```bash
-php artisan config:clear  <!--resolve query error if we submit data on database -->
+php artisan config:clear  #resolve query error if we submit data on database
 php artisan cache:clear 
 php artisan route:clear  
 php artisan route:cache ==== The POST method is not supported for this route Fix Error
