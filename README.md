@@ -1,6 +1,6 @@
 ## Welcome To Prince Ferozepuria
 
-### VERSION ``` CHECK ```
+### ``` VERSION CHECK ```
 ```bash
 composer -v
 php artisan
@@ -14,7 +14,7 @@ git --version
 hostnamectl
 ```
 
-### ``` ARTISAN ``` OPTIMIZATION 
+### ``` ARTISAN OPTIMIZATION ```  
 ```bash
 php artisan config:clear  #resolve query error if we submit data on database
 php artisan cache:clear 
