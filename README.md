@@ -14,7 +14,7 @@ git --version
 hostnamectl
 ```
 
-### ``` ARTISAN OPTIMIZATION ```  
+### ```ARTISAN OPTIMIZATION```  
 ```bash
 php artisan config:clear  #resolve query error if we submit data on database
 php artisan cache:clear 
@@ -29,9 +29,9 @@ composer update
 
 ### ```CREATE MODEL CONTROLLER MIGRATIONS```
 ```bash
-php artisan make:model Prince -mc
-php artisan make:model -mc Prince
-php artisan make:model Prince -m #Create migration file with model 
+php artisan make:model Lorem -mc
+php artisan make:model -mc Lorem
+php artisan make:model Lorem -m #Create migration and model 
 ```
 
    
