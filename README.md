@@ -150,8 +150,7 @@ git push
 
 ### ```ENV```
 ```bash
- ls | grep env
- ls -lha | grep env
- cp .env.example .env
- nano .env
+ls -lha | grep env
+cp .env.example .env
+nano .env
 ```
