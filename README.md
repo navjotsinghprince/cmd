@@ -1,4 +1,4 @@
-## Welcome To Prince Ferozepuria
+## Prince Ferozepuria
 
 ### ``` VERSION CHECK ```
 ```bash
