@@ -154,6 +154,9 @@ npm install -D babel-loader @babel/core @babel/preset-env webpack  #install mutl
 ### ```GIT```
 ```bash
 git status
+git pull
+git pull --rebase
+
 git add . 
 git commit -m "message"
 git push
