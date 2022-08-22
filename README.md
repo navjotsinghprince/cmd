@@ -3,6 +3,7 @@
 ### ``` VERSION CHECK ```
 ```bash
 composer -v
+composer validate
 php artisan
 vue --version 
 node -v
@@ -152,6 +153,12 @@ npm install -D babel-loader @babel/core @babel/preset-env webpack  #install mutl
 
 ### ```GIT```
 ```bash
+git status
+git add . 
+git commit -m "message"
+git push
+git push origin master
+
 git log
 git show d41b44082218177319c19a5be9021087f547e285 
 git config --list
@@ -162,8 +169,17 @@ git commit -m 'clean'
 git push origin master
 git push
 
-#git reset HEAD~ ==== for undo a commit
-#git reset --soft HEAD~1 ==Undo Last Commit
+git remote -v
+git clone git@github.com:navjotsinghprince/cmd.git
+git log
+git show ee7b632167778913183c6a54cda157ccb389fc30
+
+git tag v1.0.0
+git push --tag
+git push origin v1.0.0
+
+git tag --delete v1.0.0
+git push --delete origin v1.0.0
 
 ```
 
