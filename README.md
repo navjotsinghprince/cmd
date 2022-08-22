@@ -153,18 +153,36 @@ npm install -D babel-loader @babel/core @babel/preset-env webpack  #install mutl
 
 ### ```GIT```
 ```bash
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:navjotsinghprince/cmd.git
+git push -u origin main
+
+
 git status
 git pull
 git pull --rebase
+git pull origin master
 
 git add . 
 git commit -m "message"
 git push
 git push origin master
+git push origin master -f
+
+git restore --staged index.html
+git restore index.html
 
 git log
+git log --oneline
+git log --oneline -3
 git show d41b44082218177319c19a5be9021087f547e285 
+
 git config --list
+git config --global user.name "princeferozepuria"
+git config --global user.email "fzr@navjotsinghprince.com"
 
 git rm -r --cached .
 git add .
@@ -172,6 +190,7 @@ git commit -m 'clean'
 git push origin master
 git push
 
+git remote show origin
 git remote -v
 git clone git@github.com:navjotsinghprince/cmd.git
 git log
@@ -183,6 +202,17 @@ git push origin v1.0.0
 
 git tag --delete v1.0.0
 git push --delete origin v1.0.0
+
+git branch
+git branch fzr
+git checkout fzr
+git checkout master
+git merge fzr
+git push -u origin master
+
+git branch -d fzr
+git push origin --delete fzr
+
 
 ```
 
