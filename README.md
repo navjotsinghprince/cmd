@@ -225,7 +225,7 @@ ssh -T git@github.com
 
 git revert HEAD --no-edit
 
-#DELTE ALL COMMIT HISTORY, BUT KEEP IN EXISTING CODE
+#DELETE ALL COMMIT HISTORY , BUT KEEP IN EXISTING CODE
 git checkout --orphan latest_branch #Checkout
 git add -A #Add all the files
 git commit -am "commit message" #Commit the changes
