@@ -1,0 +1,240 @@
+[ADD JQUERY INTO WEBPAGE CDN AND MANUAL CODE]
+<script src="jquery.js" charset="utf-8"></script>                              //manually add file
+<script src="my-jquery-functions.js" charset="utf-8"></script>                 // seperate functions file 
+cdn google here -----  //Content Delivery Network                              //Recomended
+cdn microsoft-----
+cdn official site-----
+______________________________
+BASIC SYNTAX =1ST WAY
+$(document).ready(function(){
+your further code is here...eg= alert(welcome);
+});
+-----------------------------
+2ND WAY
+$(function(){
+your further code is here...
+});
+
+============================
+$(document).on("click",".edit-btn", function(){ });====this is dynamic file selector used for target html tags
+    
+================[MOUSE/ClICK EVENTS METHODS]============= we can also use mutiple event on single element
+3=$("#btn").on("click",function(){ ....});== jab button par left click hoga function trigger hoga
+4=$("#btn").off("click"); == ab click event work nhi krega 
+5=$("#btn").on("dblclick",); == jab right double click hoga tab function trigger hoga
+6=$("#btn").on("mouseenter"); == jab div box pe mouse cursor enter hoga tab function trigger hoga     
+7=$("#btn").on("mouseover"); ==  jab div box pe mouse cursor enter hoga tab function trigger hoga
+8=$("#btn").on("contextmenu"); ==  jab right click hoga tab function trigger hoga
+9=$("#btn").mouseleave(); ==  jab mouse element pe jakr leave hoga tab function trigger hoga
+
+===================[ADD MULTIPLE EVENTS METHODS]==============================
+ $("#div").on({
+  "click": function () {  
+    $(this).css("background", "white");
+    $("h1").addClass("red");  
+  },
+
+  "dblclick": function () {  
+    $("h2").addClass("green");
+  }
+});
+
+========OFF MULTIPLE EVENTS======
+ $("#btn").click(function(){
+      $("#box,h1,h2,h3,h4,h5,h6").off("click dblclick mouseenter mouseover contextmenu");
+  }); 
+
+=================[KEYBOARD EVENTS METHODS]============we can use mutiple event on single element
+1=$("body").keypress(function(){...});==when any keypress it will be trigger
+2=$("body").keydown();==same work as keypress
+3=$("body").keyup();==when key press and release it will be trigger
+
+==========================[WINDOW EVENTS METHODS]==========================
+1=$(window).scroll(); ==jab window scroll kregy tab function trigger hoga
+2=$("#div").scroll(); == jab koi div box scroll kregy tab function trigger hoga
+3=$(window).resize(); == jab window resize kregy tab function chelga
+
+==========================[FORM WINDOW EVENTS METHODS]==========================
+1=$("input").focus();==when input box on focus
+2=$("input").blur(); == when input box foucs release
+3=$("input").select(); == when user select some data/text for copy paste 
+4=$("#sel").change(); ==when change the selected value like:- select option tag 
+5=$("#frm").submit(); == when form submitted it wil be trigered
+6=$("input").change(); == when change any value it will be trigered
+7=$("#form).trigger();===will learn
+
+==========================[GET VALUE METHODS]==========================
+1=var a =$("body").text(); == it will return only text
+1=var a =$("body").html(); == it will return inner html includes tags and text
+1=var a = $("input").val(); == it will return form input user values
+1=var a = $("#anc").attr("href"); == it will return attribute values and pass attribute name as a parameter
+
+==========================[SET VALUE METHODS]==========================
+1=$("#title").text("this is some text"); == set inner text value
+2=$(".label").html("<h2>Name</h2>"); == set inner html value
+3=$("#in").val("NAVJOT"); == set the value in input tag 
+4=$("#anc").attr("href","https://www.w3schools.com/jquery/"); ==set single attribute and its new value
+5=$("#anc").attr("class","colorful"); == class lagegi joki colorful name se hai
+6=$("#firstname").val("").attr("placeholder","First Name");
+==1st parameter which type of attribute to be inserted
+==2nd parameter which name class to be inserted
+6=$("#anc").attr({
+  "href" : "https://www.w3schools.com/jquery/",
+  "title" : "w3schools jQuery Tutorials"}); == set multiple attributes at same time
+
+==========================[CALLBACK FUNCTIONS]==========================
+1=$("h1").hide(7000,function(){           == this is callback function
+alert("hide successfully");});            == and ye function automatically call hoga 
+
+==========================[CLASS/CSS METHODS]==========================
+1=$("h1 , p").addClass("first second third"); ==add multiple classes
+2=$("div,h1,p").removeClass("first second third"); ==remove multiple classes
+3=$("#box").toggleClass("fifth"); ==add toggle class
+4=$("body").css("background-color", "#e02dbb");== add single css style
+5=$("h1").css({"color": "red","font-family": "calibri"}) == add multiple css style
+
+==========================[APPEND PREPEND BEFORE AFTER]==========================
+1=$(".box").prepend("<h1>NEW HEADING </h1>");==it will add content/tag on inside div box(any type) at start
+2=$(".box").append("<h1>NEW HEADING </h1>");==it will add content/tag on inside div box(any type) at end
+3=$(".box").before();==it will add content/tag on outside div box(any type) at start
+4=$(".box").after();==it will add content/tag on outside div box(any type) at end
+
+==========================[PREPEND TO  APPEND TO]==========================
+==both are working same as append or prepend
+==but isme content phle likhte hai aur method bad me likhte hai
+1=$("<h2>here is prependTo method working</h2>").prependTo("#box");
+2=$("<h2>here is appendTo method working</h2>").appendTo("#box");
+
+==========================[REMOVE EMPTY CLONE]==========================
+$(".box").empty();==ye only div ke sare child element hata dega div khali kr dega
+$(".box img").remove();== ye only div box se sabi img tag hata dega
+$(".box").remove();== ye pura div hi delete kr dega document se
+$("#box p").clone().prependTo("#box2"); == Ye jo bhi #box div ke andar p tag hai usko #box2 div me clone kr dega means copy paste kr dega
+
+==========================[REPLACE WITH,REPLACE ALL]==========================
+$("#box p:first").replaceWith("<h2>this is new replaced text</h2>");  == p replaced to h2 tag
+$("<h3>hello world</h3>").replaceAll("#box h2"); == ye sabi all h2 tag ko h3 se replace kr dega
+
+==========================[WRAP, UNWRAP, WRAP ALL, WRAP INNER]==========================
+$("h1,p").wrap('<div id="box"></div>') == ye h1 aur p ko div tag ke ander dal dega 
+$("h1,p").unwrap(); == ye h1 aur p tag ko div se bahar nikal dega
+$("h1,p").wrapAll('<div id="box"></div>') == all element wrap into single div element
+$("h1").wrapInner("<span></span>"); == now h1 inside span tag
+
+==========================[Width Height]==========================
+ console.clear();
+ console.log("width of box is : "+$("#box").width()); //content width
+ console.log("innerWidth of box is : "+$("#box").innerWidth()); //inside box width+padding
+ console.log("outerWidth of box is : "+$("#box").outerWidth()); //outside include+10px border
+ console.log("outerWidth(true)of box is : "+$("#box").outerWidth(true)); //outside include margin+width
+
+ console.log("here is box height");
+ console.log("height of box is : "+$("#box").height());
+ console.log("innerHeight of box is : "+$("#box").innerHeight());
+ console.log("outerHeight of box is : "+$("#box").outerHeight());
+ console.log("outerHeight(true) of box is : "+$("#box").outerHeight(true));
+
+==========================[POSITION AND OFFSET]==========================
+var p = $("#box").position(); == relative to its parent postion
+console.log("top is : " + p.top); == get element position top and left position 
+console.log("left is :" + p.left); == this function no argument accept
+
+//var o = $("#box").offset(); == relative to window/whole documents postion
+//console.log("top is : " + o.top); == get element position top and left position 
+//console.log("left is :" + o.left);    
+
+$("#offsetbtn").click(function(){ == set position to html tag
+$("#box").offset({top:0,left:0}); == according to screen work
+
+==========================[SCROLL TOP AND SCROLL LEFT]==========================
+var t= $(window).scrollTop(); ==get window document vertical scroll bar  position 
+var l = $(window).scrollLeft();== get window document horizontal scroll bar position
+ 
+$(window).scrollTop(100); == set window document vertical scroll bar  position 
+$(window).scrollLeft(100); == set window document horizontal scroll bar position
+
+==========================[HAS CLASS ,HIDE,SHOW,TOGGLE]==========================
+var r =$(".box h1").hasClass("abc"); == check element has class abc or not ,return true/false
+$(".box p").hide("slow");== hide any element from document using display:none
+$(".box p").show(2000);== show any element from document
+$(".box p").toggle(1000,function(){}== hide and show both methods works in toggle
+
+==========================[FADE IN, FADE OUT , FADE TOGGLE, FADE IN]==========================
+$(".box p").fadeIn(2000);  == remove fade in effect 
+$(".box p").fadeOut(2000); == ye element ko fade out kr ke display none krega
+$(".box p").fadeToggle(1000,function(){}== hide and show both methods works in toggle
+$(".box p").fadeTo(2000,0.5,function () {}==kitna element fade krna hai
+
+==========================[SLIDE METHODS ,ANIMATE]==========================
+$(".box").slideUp("slow"); == ye element ko oper silde kr kr hide kr dega
+$(".box").slideDown(2000); == ye method slide ko niche kr ke show ke dega
+$(".box").slideToggle(); ==  ye method show bi krega hide b krega slide
+$(".child").animate({left: "80%"},2000); == kisi element ko kisi bhi direction me animate krne ke liye
+
+==========================[STOP]==========================
+$('.box').stop(); == animation stop ho jayegi lekin jha ruki waha pr complete hogi
+$('.box').stop(true); ==jaha pr stop kr dia animation wha ruk jayegi aur pending animation complete nhi hogi
+$('#Directstop').click(function()} == without animations hue go to finish point pr jayegi 
+
+==========================[METHODS CHANING]============================
+$('.box').css('color','white').slideToggle(1000); == DOT . laga kr step by step functions add krna 
+
+==========================[EACH METHODS LOOP]==========================
+ $("li").each(function(){ code here....}); == y har wo element ke liye loop ki trah chalega jo isme selected hai
+
+==========================[PAGE X PAGE Y]==========================
+var x = event.pageX;  == get horizontal mouse pointer position
+var y = event.pageY; == get vertical mouse pointer position
+
+=============================[EVENTS METHODS]===============================
+event.type == sagr hum dekhna chahte hain ki user ne konsa event triggered kiya hai toh hum ye use kregy
+event.which == agr hum dekhna chahte hai ki konsa specific event triggered hua hai like agr click event triggered hua hai toh konsa hua hai leftclick ya rightclick ya centerclick
+event.target == 
+
+===============================[Parent Traversing]=====================================
+$("#child-b").parent().css("background","blue");=== Target only immidiate parent of child-b
+$("#child-b").parents().css("background","blue");===Target all parents of child-b id
+$("#child-b").parents("#innerouter").css("background","#e762f2");===Also Target any particular parent
+$("#subinner").parentsUntil("#mainouter").css("background","#e762f2");=== Target subinner and mainouter between 
+$("#child-b").closest('div').css("background","#e762f2");===Target Only these elements who is most closest to it
+
+=============================[CHILDREN Traversing]==================================
+$(".outerdiv").children().css("background" , "#379ee6");===Target all children elements of Outerdiv
+$(".outerdiv").children(".inner").css("background" ,"#fc4379");===Target immidiate children of Outerdiv like inner
+$(".inner").find(".test").css("background" ,"#379ee6");===Target these children which has class test lagi hui hai
+
+==============================[FILTERING Traversing]===============================
+$("div").first().css("background" , "blue");===Target whole document in first div
+$("div").last().css("background" , "yellow");===Target whole document in last div
+$("div").eq(3).css("background" , "red"); ===Equation Method through target 4th div
+$("div").not(".test").css("background" , "orange");===not .test class ko chod ke all dosre Sabi div target krega
+$("div").filter(".test").css("background" , "green");===Which div who has class test
+$(".first p").slice().css("background" , "yellow"); ===all p element inside .first class
+$(".first p").slice(0,4).css("background" , "white"); ===1 se 4 tk target index start 0 hongy
+
+=============================[SIBILINGS]=======================================
+$("#child-h").siblings().css("background", "red");===Target all sibilings of h3
+$("#child-h").siblings("h2").css("background", "brown"); ===Target these sibilings which are h2
+$("#child-h").next().css("background", "pink");===Target next sibiling of child-h
+$("#child-h").prev().css("background", "blue");===Target previous sibiling od child-h
+$("#child-h").nextAll().css("background", "blue");===Target child-h next all sibilings
+$("#child-h").prevAll().css("background", "gold");===Target child-h previous all sibilings
+
+$(".test").nextUntil().css("border", "1px solid red");===jitne bhi sibilings .test ke bad hai wo sabi target krega
+$(".test").nextUntil("#child-h").css("border", "1px solid red");==.test se leker #child-h ke beech wale sibilings 
+$("#span").prevUntil().css("background", "lightgreen"); ===jitne bhi previous hai sabi ko target krega oper wale
+
+==============================[EVENT OBJECT METHODS]=============================
+$(".result").text("X-axis:"+event.pageX + " Y-axis:"+event.pageY); ===Get mouse pointer position
+$("#span").text("Event:"+event.type);====Check event type which occur
+$("h2").html(event.type+":"+event.which);==== Which specific event triggered like left click,right click,centerclick
+event.stoppropagation();====The event.stopPropagation() method stops the bubbling of an event to parent elements
+$("#span").html((event.data.value));====The event.data property contains the optional data passed to an event method  .when the current executing handler is bound.
+
+event.preventDefault();====If this method is called, the default action of the event will not be triggered.
+event.isDefaultPrevented();===Returns whether event.preventDefault() was ever called on this event object.
+
+=============================[Has Is]=======================
+$("p").has("span,b").css("background","gold");===ese p tag jinme span aur b tag a raha hai unko target kraga ye
+if($("p").parent().is("div")){}====ese p tag jinka parent div hai usko target krega
+
