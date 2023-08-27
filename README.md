@@ -256,3 +256,15 @@ Firefox Multi-Account Containers by Mozilla Firefox , Lightshot , Wappalyzer
 Google Bard — https://bard.google.com
 Chat GPT — https://chat.openai.com
 ```
+
+## Authors
+:point_right: [Navjot Singh Prince](https://github.com/navjotsinghprince)
+
+## Contact
+If you discover any question within details, please send an e-mail to Prince Ferozepuria via [fzr@navjotsinghprince.com](mailto:fzr@navjotsinghprince.com). Your all questions will be answered.
+
+## Buy Me A Coffee! :coffee: 
+Feel free to buy me a coffee at [__Buy me a coffee! :coffee:__]( https://ko-fi.com/princeferozepuria), I would be really grateful for anything, be it coffee or just a kind comment towards my work, that helps me a lot.
+
+## Donation
+The information is completely free to use, however, it has taken a lot of time to build. If you would like to show your appreciation by leaving a small donation, you can do so by clicking here [here](https://www.paypal.com/paypalme/navjotsinghprince). Thanks!
