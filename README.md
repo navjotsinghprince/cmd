@@ -224,6 +224,15 @@ cat /home/prince/.ssh/id_rsa.pub
 ssh -T git@github.com
 
 git revert HEAD --no-edit
+
+#DELTE ALL COMMIT HISTORY, BUT KEEP IN EXISTING CODE
+git checkout --orphan latest_branch #Checkout
+git add -A #Add all the files
+git commit -am "commit message" #Commit the changes
+git branch -D main  #Delete the branch
+git branch -m main #Rename the current branch to main
+git push -f origin main #Finally,force update
+
 ```
 
 
