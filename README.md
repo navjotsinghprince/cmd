@@ -257,7 +257,7 @@ Google Bard — https://bard.google.com
 Chat GPT — https://chat.openai.com
 ```
 
-## Authors
+## Author
 :point_right: [Navjot Singh Prince](https://github.com/navjotsinghprince)
 
 ## Contact
