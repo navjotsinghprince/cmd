@@ -188,7 +188,9 @@ git push -u origin main
 git pull test  #first way
 git branch --set-upstream-to=origin/test test  #second way
 git pull #second way
-git merge origin/test #solve diverged warning
+git merge origin/test #solve diverged warning'
+
+git pull --rebase origin main #solve divergent
 
 git branch -a    #local branch
 git branch -r    #remote branch
