@@ -261,7 +261,7 @@ Chat GPT — https://chat.openai.com
 ```
 
 ## Author
-:point_right: [Navjot Singh Prince](https://github.com/navjotsinghprince)
+<img src="https://navjotsinghprince.com/img/signature-black.png" alt="Navjot Singh" height="50">
 
 ## Contact
 If you discover any question within details, please send an e-mail to Prince Ferozepuria via [fzr@navjotsinghprince.com](mailto:fzr@navjotsinghprince.com). Your all questions will be answered.
