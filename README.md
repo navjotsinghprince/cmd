@@ -86,6 +86,9 @@ php artisan make:command LoremCommand
 ### ```ARTISAN REQUEST```
 php artisan make:request LoremRequest
 
+### ```ARTISAN EMAIL```
+php artisan make:mail ResetPasswordMail
+
 ### ```ARTISAN JOBS```
 php artisan make:job ProcessPodcast
 composer require laravel/horizon
