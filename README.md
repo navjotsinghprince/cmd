@@ -56,8 +56,8 @@ php artisan model:show User
 
 ### ```ARTISAN MIGRATION```
 php artisan migrate:refresh --path=/database/migrations/filename.php
-php artisan make:migration create_my_name_table 
-php artisan make:migration add_user_id_column_to_profile_table  
+php artisan make:migration create_my_name_table
+php artisan make:migration add_is_suspended_to_users_table --table=users
 php artisan migrate
 php artisan migrate:fresh
 php artisan migrate:refresh
