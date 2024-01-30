@@ -238,6 +238,9 @@ git branch -D main  #Delete the branch
 git branch -m main #Rename the current branch to main
 git push -f origin main #Finally,force update
 
+#Override All Commit Messages
+git filter-branch --msg-filter 'echo "navjotsinghprince.com"' HEAD
+git push origin master --force
 ```
 
 
