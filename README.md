@@ -262,7 +262,7 @@ Firefox Multi-Account Containers by Mozilla Firefox , Lightshot , Wappalyzer
 ### ```ARTIFICIAL INTELLIGENCE```
 ```bash
 Copilot — https://github.com/copilot
-Google Gemini — https://bard.google.com
+Google Gemini — https://gemini.google.com
 Chat GPT — https://chat.openai.com
 ```
 
