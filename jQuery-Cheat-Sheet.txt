@@ -1,6 +1,6 @@
 [ADD JQUERY INTO WEBPAGE CDN AND MANUAL CODE]
 <script src="jquery.js" charset="utf-8"></script>                              //manually add file
-<script src="my-jquery-functions.js" charset="utf-8"></script>                 // seperate functions file 
+<script src="my-jquery-functions.js" charset="utf-8"></script>                 //seperate functions file 
 cdn google here -----  //Content Delivery Network                              //Recomended
 cdn microsoft-----
 cdn official site-----
