@@ -205,6 +205,7 @@ git push origin -d test  #delete remote branch
 git remote show origin
 git remote -v
 git clone git@github.com:navjotsinghprince/lorem.git myfolder
+git clone git@github.com:navjotsinghprince/cmd.wiki.git
 
 git remote add gh-page git@github.com:navjotsinghprince/lorem.git
 git push gh-page main
