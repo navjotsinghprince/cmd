@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company>
+    <Employees>
+        <Employee>
+            <ID>001</ID>
+            <Name>John Doe</Name>
+            <Position>Software Engineer</Position>
+            <Department>Development</Department>
+            <Email>john.doe@example.com</Email>
+        </Employee>
+        <Employee>
+            <ID>002</ID>
+            <Name>Jane Smith</Name>
+            <Position>Project Manager</Position>
+            <Department>Management</Department>
+            <Email>jane.smith@example.com</Email>
+        </Employee>
+        <Employee>
+            <ID>003</ID>
+            <Name>Emily Davis</Name>
+            <Position>UI/UX Designer</Position>
+            <Department>Design</Department>
+            <Email>emily.davis@example.com</Email>
+        </Employee>
+    </Employees>
+    <Projects>
+        <Project>
+            <ID>P001</ID>
+            <Name>Website Redesign</Name>
+            <Manager>Jane Smith</Manager>
+            <Deadline>2025-03-15</Deadline>
+            <Status>In Progress</Status>
+        </Project>
+        <Project>
+            <ID>P002</ID>
+            <Name>Mobile App Development</Name>
+            <Manager>John Doe</Manager>
+            <Deadline>2025-04-30</Deadline>
+            <Status>Pending</Status>
+        </Project>
+    </Projects>
+</Company>
+
