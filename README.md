@@ -256,7 +256,7 @@ PHP IntelliSense - Damjan Cvetko
 PHP Namespace Resolver - Mehedi Hassan
 Laravel Extra Intellisense - amir
 Laravel goto view - codingyu
-
+rm -rf ~/.config/Code
 Firefox Multi-Account Containers by Mozilla Firefox , Lightshot , Wappalyzer
 ```
 
