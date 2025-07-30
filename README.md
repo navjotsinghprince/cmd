@@ -246,7 +246,28 @@ git push -f origin main #Finally,force update
 git filter-branch --msg-filter 'echo "navjotsinghprince.com"' HEAD
 git push origin master --force
 ```
+### ```LINUX```
+```bash
+sudo nano ~/.bashrc
+alias ccc='sudo chmod -R 777 storage/'
+alias push='git branch && git status && git add . && git status && git commit -m "updated" && git push && git status && git branch'
+Or
+function push() {
+  local msg="${1:-updated}" #optional , default commit message
 
+  git branch
+  git status
+  git add .
+  git status
+  git commit -m "$msg"
+  git push
+  git status
+  git branch
+}
+
+source ~/.bashrc  #reload
+rm -rf ~/.config/Code #clear vs code config, set to default 
+```
 
 ### ```EXTENSIONS```
 ```bash
@@ -259,7 +280,6 @@ PHP IntelliSense - Damjan Cvetko
 PHP Namespace Resolver - Mehedi Hassan
 Laravel Extra Intellisense - amir
 Laravel goto view - codingyu
-rm -rf ~/.config/Code
 Firefox Multi-Account Containers by Mozilla Firefox , Lightshot , Wappalyzer
 ```
 
