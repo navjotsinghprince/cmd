@@ -182,7 +182,7 @@ git status
 git add .
 git commit -m "updated add modify files"
 git push origin test
-git push --set-upstream origin test #if push shows error
+git push --set-upstream origin test #if push shows no upstream branch
 
 git checkout main
 git merge test
