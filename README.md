@@ -177,7 +177,7 @@ git branch -help
 git help --all
 
 git branch
-git checkout -b test
+git checkout -b test  #create a new branch
 git status
 git add .
 git commit -m "updated add modify files"
