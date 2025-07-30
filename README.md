@@ -188,6 +188,8 @@ git checkout main
 git merge test
 git push -u origin main
 
+git pull origin main #when new work start on branch
+
 #PULL REMOTE BRANCH
 git pull test  #first way
 git branch --set-upstream-to=origin/test test  #second way
