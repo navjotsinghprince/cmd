@@ -266,7 +266,8 @@ function push() {
 }
 
 source ~/.bashrc  #reload
-rm -rf ~/.config/Code #clear vs code config, set to default 
+rm -rf ~/.config/Code #clear vs code config, set to default
+.<!-- Mirrored from demo\.myapp\.studio.\n? #remove full line
 ```
 
 ### ```EXTENSIONS```
