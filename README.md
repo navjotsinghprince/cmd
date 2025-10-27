@@ -296,7 +296,7 @@ Google Gemini — https://gemini.google.com
 <img src="https://navjotsinghprince.com/img/signature-black.png" alt="Navjot Singh" height="50">
 
 ## Contact
-If you discover any question within details, please send an e-mail to Prince Ferozepuria via [fzr@navjotsinghprince.com](mailto:fzr@navjotsinghprince.com). Your all questions will be answered.
+If you discover any question within details, please send an e-mail to Prince Ferozepuria via [navjotsinghprince@icloud.com](mailto:navjotsinghprince@icloud.com). Your all questions will be answered.
 
 ## Buy Me A Coffee! :coffee: 
 Feel free to buy me a coffee at [__Buy me a coffee! :coffee:__]( https://ko-fi.com/princeferozepuria), I would be really grateful for anything, be it coffee or just a kind comment towards my work, that helps me a lot.
