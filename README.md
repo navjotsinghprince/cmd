@@ -1,4 +1,4 @@
-## Prince Ferozepuria - https://navjotsinghprince.com
+## By Navjot Singh ✍️
 
 ### ``` VERSION CHECK ```
 ```bash
